@@ -1,0 +1,294 @@
+:root {
+  --navy: #29384f;
+  --ink: #2f333f;
+  --light: #f3f4f7;
+  --gold: #c8aa53;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--ink);
+  background: #fff;
+}
+
+.container {
+  width: min(1100px, 92vw);
+  margin: 0 auto;
+}
+
+.topbar {
+  border-bottom: 1px solid #e5e7ec;
+  background: #fff;
+}
+
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.brand span {
+  color: #666;
+}
+
+.brand small {
+  color: var(--gold);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a,
+.hero-cats a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.actions {
+  font-size: 0.75rem;
+  color: #5f6572;
+}
+
+.hero {
+  background: radial-gradient(circle at 20% 30%, #35536f, #223249 70%);
+  color: #fff;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 2rem;
+  padding: 4rem 0 3rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.search-btn,
+.shop-all {
+  border: 0;
+  background: #fff;
+  color: #232734;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  min-width: 240px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.badge {
+  margin-top: 2.25rem;
+  font-weight: 700;
+  color: #f2f4f8;
+}
+
+.stat-card {
+  background: #5d7494;
+  border-radius: 16px;
+  padding: 2.2rem;
+  text-align: center;
+}
+
+.num {
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #bce3fa;
+}
+
+.mini-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  gap: 0.75rem;
+}
+
+.ship-card {
+  background: var(--gold);
+  color: #fff;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.ship-card strong {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.img-card {
+  border-radius: 12px;
+  min-height: 200px;
+  background: linear-gradient(145deg, #c98e5f, #855738);
+}
+
+.hero-cats {
+  background: rgba(17, 22, 34, 0.6);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.promise {
+  background: #dfe3e9;
+  border-radius: 0 0 14px 14px;
+  margin-top: 0;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 2rem;
+}
+
+.promise-list p {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #aeb7c2;
+  padding-bottom: 1rem;
+}
+
+.categories,
+.products {
+  padding: 4rem 0;
+}
+
+.cat-grid {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: 0.65fr 1.4fr;
+  gap: 0.85rem;
+}
+
+.cat-card {
+  border-radius: 14px;
+  padding: 2rem;
+  min-height: 220px;
+  color: #fff;
+}
+
+.gold {
+  background: var(--gold);
+}
+
+.rust {
+  background: #b26f45;
+}
+
+.navy {
+  background: #234359;
+}
+
+.slate {
+  background: #425d70;
+}
+
+.products {
+  background: #f2f0ec;
+}
+
+.product-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e3e5ea;
+  padding-bottom: 1rem;
+}
+
+.product-image {
+  height: 220px;
+  background: linear-gradient(160deg, #cad2dc, #8994a3);
+}
+
+.product-image.gpu {
+  background: linear-gradient(160deg, #cfd5de, #777f8d);
+}
+
+.product-card h4,
+.product-card p {
+  padding: 0 1rem;
+}
+
+.price {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin: 0.4rem 0 0.7rem;
+}
+
+.product-card button {
+  margin: 0 1rem;
+  width: calc(100% - 2rem);
+  border: 0;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #111;
+  font-weight: 700;
+  padding: 0.8rem;
+}
+
+.shop-all {
+  margin: 2.1rem auto 0;
+  background: #f1f1f1;
+}
+
+.seen {
+  background: #2b3040;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.logos div {
+  background: #020305;
+  border-radius: 12px;
+  padding: 1.2rem;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .nav-links,
+  .actions,
+  .hero-cats {
+    display: none;
+  }
+
+  .hero-grid,
+  .promise,
+  .cat-grid,
+  .product-grid,
+  .logos {
+    grid-template-columns: 1fr;
+  }
+}
